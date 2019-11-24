@@ -76,6 +76,7 @@
     <Content Include="css\estilosPropios.css" />
     <Content Include="FrmHome.aspx" />
     <Content Include="FrmNivel1.aspx" />
+    <Content Include="FrmNivel2.aspx" />
     <Content Include="FrmPrincipal.aspx" />
     <Content Include="img\bg.jpg" />
     <Content Include="img\bg2.jpg" />
@@ -118,6 +119,13 @@
     </Compile>
     <Compile Include="FrmNivel1.aspx.designer.cs">
       <DependentUpon>FrmNivel1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNivel2.aspx.cs">
+      <DependentUpon>FrmNivel2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmNivel2.aspx.designer.cs">
+      <DependentUpon>FrmNivel2.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.aspx.cs">
       <DependentUpon>FrmPrincipal.aspx</DependentUpon>
