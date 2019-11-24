@@ -8,6 +8,9 @@
     <title>SALBA-HOME</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/estilosPropios.css"/>
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/estilos.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
 </head>
 <body>
     <nav class="navbar-expand-sm navbar-dark" style="background-color: rgb(89, 181, 72)">
@@ -22,7 +25,7 @@
             </li>
             <li class="nav-item ml-auto pt-4 pr-2">
                 <button class="btn btn-sena" type="button" data-toggle="modal" data-target="#modalRegistro">Registro</button>
-                <button class="btn btn-sena" type="button">Login</button>
+                <button class="btn btn-sena" type="button" data-toggle="modal" data-target="#modalLogin">Login</button>
             </li>
         </ul>
         
@@ -64,28 +67,102 @@
     </div>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        Add rows here
+
+
+
+
+    <form id="frmValidacionModal" runat="server">
+        <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-success">
+                        <button class="close text-white" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <div class="modal-body text-center">
+                        <h2 class="modal-title letra2 text-center col-12">Registro</h2>
+                        <div class="mt-3 row">
+                            <i class="fas fa-user ml-3 pt-2 mr-2"></i>
+                            <asp:TextBox CssClass="form-control bordes col-lg-5" ID="txtNombre" runat="server" placeholder="Nombre"></asp:TextBox>
+                            <%--<input class="form-control bordes col-lg-5" type="text" placeholder="Nombre"/>--%>
+                            <i class="fas fa-user ml-3 pt-2 mr-2"></i>
+                            <asp:TextBox CssClass="form-control bordes col-lg-5" ID="txtApellido" runat="server" placeholder="Apellidos"></asp:TextBox>
+                            <%--<input class="form-control bordes col-lg-5" type="text" placeholder="Apellidos"/>--%>
+                        </div>
+                        <div class="mt-3 row">
+                            <i class="fas fa-envelope ml-3 pt-2 mr-2"></i>
+                            <asp:TextBox CssClass="form-control bordes col-11" ID="txtEmail" runat="server" placeholder="Correo electrónico"></asp:TextBox>
+                            <%--<input class="form-control bordes col-11" type="text" placeholder="Correo electrónico"/>--%>
+                        </div>
+                        <div class="mt-3 row">
+                            <i class="fas fa-unlock-alt ml-3 pt-2 mr-2"></i>
+                            <asp:TextBox CssClass="form-control bordes col-11" ID="txtPassword" runat="server" placeholder="Contraseña"></asp:TextBox>
+                            <%--<input class="form-control bordes col-11" type="password" placeholder="Contraseña"/>--%>
+                        </div>
+                        <div class="mt-3 row">
+                            <i class="fas fa-lock ml-3 pt-2 mr-2"></i>
+                            <asp:TextBox CssClass="form-control bordes col-11" ID="txtPasswordVerificacion" runat="server" placeholder="Verificación de contraseña"></asp:TextBox>
+                            <%--<input class="form-control bordes col-11" type="password" placeholder="Verificación de contraseña"/>--%>
+                        </div>
+                        <label>¿Ya tienes una cuenta?</label>
+                        <a href="#">INGRESA AQUI</a>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button CssClass="btn btn-outline-success mx-auto" ID="btnRegistrar" runat="server" Text="Registrar" />
+                        <%--<button class="btn btn-outline-success mx-auto">Registrar</button>--%>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+
+
+        <div class="modal" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-success">
+                        <div class="mr-2">
+                            <button class="text-right btn btn-outline-light ml-2" data-dismiss="modal" data-toggle="modal" data-target="#modalRegistro">Registrarse</button>
+                        </div>
+                        <button class="close text-white" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body  ">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h2 class="letra2 text-center"><strong>Iniciar sesión</strong></h2>
+                                    <div class="mt-5">
+                                        <i class="fas fa-envelope"></i>
+                                        <asp:TextBox CssClass="bordes" ID="txtEmailLogin" placeholder="Correo electrónico" runat="server"></asp:TextBox>
+                                        <%--<input class="bordes" type="text" placeholder="Correo electrónico">--%>
+                                        <i class="fas fa-lock"></i>
+                                        <asp:TextBox CssClass="bordes" ID="txtPasswordLogin" runat="server"></asp:TextBox>
+                                        <%--<input class="bordes" type="password" placeholder="Contraseña">--%>
+                                    </div>
+                                    <div class="mt-4">
+                                        <label>¿Has olvidado tu contraseña?</label>
+                                        <a href="#">Recuperar contraseña</a>
+                                        <label>¿Aún no te has registrado?  </label>
+                                        <a href="#">Registrate aquí</a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <img id="img" src="public/img/logoSena.png" class="d-flex mx-auto my-5 w-25 h-50 mb-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button CssClass="btn btn-outline-success mx-auto" ID="btnLogin" runat="server" Text="Ingresar" />
+                        <%--<button class="btn btn-outline-success mx-auto">Ingresar</button>--%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
 
 

@@ -73,6 +73,7 @@
     <Content Include="css\bootstrap-reboot.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\estilos.css" />
     <Content Include="css\estilosPropios.css" />
     <Content Include="FrmHome.aspx" />
     <Content Include="FrmNivel1.aspx" />
