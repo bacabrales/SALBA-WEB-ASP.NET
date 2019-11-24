@@ -10,14 +10,22 @@
     <link rel="stylesheet" href="css/estilosPropios.css"/>
 </head>
 <body>
-    <nav class="navbar-expand-sm navbar-dark"
-        style="background-color: rgb(89, 181, 72)">
-        <img src="img/logoSena.png" width="200" height="80" alt=""/>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+    <nav class="navbar-expand-sm navbar-dark" style="background-color: rgb(89, 181, 72)">
+        <%--<img src="img/logoSena.png" width="200" height="80" alt=""/>--%>
+        <%--<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
-        </button>
-        <button class="btn btn-sena" type="button" data-toggle="modal" data-target="#modalRegistro">Registro</button>
-        <button class="btn btn-sena" type="button">Login</button>
+        </button>--%>
+
+        <ul class="navbar-nav d-flex">
+            <li class="nav-item">
+                <img src="img/logoSena.png" width="200" height="80" alt=""/>
+            </li>
+            <li class="nav-item ml-auto pt-4 pr-2">
+                <button class="btn btn-sena" type="button" data-toggle="modal" data-target="#modalRegistro">Registro</button>
+                <button class="btn btn-sena" type="button">Login</button>
+            </li>
+        </ul>
+        
     </nav>
 
     <div class="container">
