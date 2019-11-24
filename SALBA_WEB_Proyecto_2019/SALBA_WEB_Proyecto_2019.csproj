@@ -94,6 +94,7 @@
     <Content Include="img\imagen_tres.jpg" />
     <Content Include="img\imagen_uno.jpg" />
     <Content Include="img\logoSena.png" />
+    <Content Include="img\logoSenaMenu.png" />
     <Content Include="img\mate.jpg" />
     <Content Include="img\Nivel1.jpg" />
     <Content Include="img\Nivel2.jpg" />

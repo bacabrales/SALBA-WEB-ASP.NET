@@ -21,7 +21,7 @@
 
         <ul class="navbar-nav d-flex">
             <li class="nav-item">
-                <img src="img/logoSena.png" width="200" height="80" alt=""/>
+                <img src="img/logoSenaMenu.png" width="200" height="80" alt=""/>
             </li>
             <li class="nav-item ml-auto pt-4 pr-2">
                 <button class="btn btn-sena" type="button" data-toggle="modal" data-target="#modalRegistro">Registro</button>
@@ -150,7 +150,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <img id="img" src="public/img/logoSena.png" class="d-flex mx-auto my-5 w-25 h-50 mb-0" />
+                                    <img id="img" src="img/logoSena.png" class="d-flex mx-auto my-5 w-25 h-50 mb-0" />
                                 </div>
                             </div>
                         </div>
