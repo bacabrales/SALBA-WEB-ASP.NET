@@ -13,7 +13,17 @@ namespace SALBA_WEB_Proyecto_2019
         {
             if (!IsPostBack)
             {
-                dropdownId.InnerText = (string)Session["usuario"] + " " + (string)Session["apellido"];
+                string usuario = (string)Session["usuario"];
+                string password = (string)Session["password"];
+                if (usuario != string.Empty  && password != string.Empty) 
+                {
+                    dropdownId.InnerText = (string)Session["nombre"] + " " + (string)Session["apellido"];
+                }
+                else
+                {
+                    Response.Redirect("https://localhost:44300/FrmHome.aspx");
+                }
+                
             }
         }
     }

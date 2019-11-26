@@ -19,12 +19,36 @@ namespace SALBA_WEB_Proyecto_2019
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
             ControllerDato dato = new ControllerDato();
-            int numero = dato.guardar(this);
-            if (numero == 1)
+            if (txtNombre.Text.Trim() != "" && txtApellido.Text.Trim() != "" && txtEmail.Text.Trim() != "" && txtPassword.Text.Trim() != "" && txtPasswordVerificacion.Text.Trim() != "")
             {
-                string script = string.Format("alert('Usuario creado')");
+                if (txtPassword.Text == txtPasswordVerificacion.Text)
+                {
+                    int numero = dato.guardar(this);
+                    if (numero == 1)
+                    {
+                        string script = string.Format("alert('Usuario creado')");
+                        ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                    }
+                    else
+                    {
+                        string script = string.Format("alert('Error, al crear el ususario')");
+                        ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                    }
+                }
+                else
+                {
+                    //decir que las contraseña no conincide
+                    string script = string.Format("alert('Contraseña no coincide')");
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                }
+            }
+            else
+            {
+                //decir que los campos no estan completos{
+                string script = string.Format("alert('Campos incompletos')");
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
             }
+            
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -33,7 +57,7 @@ namespace SALBA_WEB_Proyecto_2019
             int buscar = dato.buscar(this);
             if (buscar == 1)
             {
-                Session["usuario"] = DatoValidaciones.usuario;
+                Session["nombre"] = DatoValidaciones.usuario;
                 Session["apellido"] = DatoValidaciones.apellido;
                 Response.Redirect("https://localhost:44300/FrmPrincipal.aspx");
             }

@@ -83,6 +83,7 @@
     <Content Include="FrmNivel5.aspx" />
     <Content Include="FrmNivel6.aspx" />
     <Content Include="FrmPrincipal.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="img\bg.jpg" />
     <Content Include="img\bg2.jpg" />
     <Content Include="img\bg3.jpg" />
@@ -168,6 +169,9 @@
     </Compile>
     <Compile Include="FrmPrincipal.aspx.designer.cs">
       <DependentUpon>FrmPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Modelo\dato.cs" />
     <Compile Include="Modelo\DatoValidaciones.cs" />
