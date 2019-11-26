@@ -28,7 +28,6 @@
                 <button class="btn btn-sena" type="button" data-toggle="modal" data-target="#modalLogin">Login</button>
             </li>
         </ul>
-        
     </nav>
 
     <div class="container">
@@ -84,6 +83,7 @@
                         <h2 class="modal-title letra2 text-center col-12">Registro</h2>
                         <div class="mt-3 row">
                             <i class="fas fa-user ml-3 pt-2 mr-2"></i>
+                            
                             <asp:TextBox CssClass="form-control bordes col-lg-5" ID="txtNombre" runat="server" placeholder="Nombre"></asp:TextBox>
                             <%--<input class="form-control bordes col-lg-5" type="text" placeholder="Nombre"/>--%>
                             <i class="fas fa-user ml-3 pt-2 mr-2"></i>
@@ -97,19 +97,19 @@
                         </div>
                         <div class="mt-3 row">
                             <i class="fas fa-unlock-alt ml-3 pt-2 mr-2"></i>
-                            <asp:TextBox CssClass="form-control bordes col-11" ID="txtPassword" runat="server" placeholder="Contraseña"></asp:TextBox>
+                            <asp:TextBox TextMode="Password" CssClass="form-control bordes col-11" ID="txtPassword" runat="server" placeholder="Contraseña"></asp:TextBox>
                             <%--<input class="form-control bordes col-11" type="password" placeholder="Contraseña"/>--%>
                         </div>
                         <div class="mt-3 row">
                             <i class="fas fa-lock ml-3 pt-2 mr-2"></i>
-                            <asp:TextBox CssClass="form-control bordes col-11" ID="txtPasswordVerificacion" runat="server" placeholder="Verificación de contraseña"></asp:TextBox>
+                            <asp:TextBox TextMode="Password" CssClass="form-control bordes col-11" ID="txtPasswordVerificacion" runat="server" placeholder="Verificación de contraseña"></asp:TextBox>
                             <%--<input class="form-control bordes col-11" type="password" placeholder="Verificación de contraseña"/>--%>
                         </div>
                         <label>¿Ya tienes una cuenta?</label>
                         <a href="#">INGRESA AQUI</a>
                     </div>
                     <div class="modal-footer">
-                        <asp:Button CssClass="btn btn-outline-success mx-auto" ID="btnRegistrar" runat="server" Text="Registrar" />
+                        <asp:Button CssClass="btn btn-outline-success mx-auto" ID="btnRegistrar" runat="server" Text="Registrar" OnClick="btnRegistrar_Click" />
                         <%--<button class="btn btn-outline-success mx-auto">Registrar</button>--%>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <asp:Button CssClass="btn btn-outline-success mx-auto" ID="btnLogin" runat="server" Text="Ingresar" />
+                        <asp:Button CssClass="btn btn-outline-success mx-auto" ID="btnLogin" runat="server" Text="Ingresar" OnClick="btnLogin_Click" />
                         <%--<button class="btn btn-outline-success mx-auto">Ingresar</button>--%>
                     </div>
                 </div>

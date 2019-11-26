@@ -62,3 +62,23 @@ body {
     /*height: 40px;*/
     /*color: white;*/
 }
+
+/*.ancho-prueba{
+    height: 550px;
+}*/
+
+/*body {
+    padding-bottom: 56px;
+}
+
+.fixed-abajo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}*/
+
+.ancho{
+    height: 470px !important;
+}

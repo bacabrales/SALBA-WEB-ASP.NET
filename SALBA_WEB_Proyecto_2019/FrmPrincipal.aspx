@@ -38,7 +38,7 @@
                 </ul>
             <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle justify-content-end" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noé Villegas</a>
+                        <a runat="server" class="nav-link dropdown-toggle justify-content-end" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noé Villegas</a>
                         <div class="dropdown-menu " aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Cerrar Sesión</a>
                         </div>

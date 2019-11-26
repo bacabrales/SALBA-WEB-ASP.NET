@@ -11,7 +11,10 @@ namespace SALBA_WEB_Proyecto_2019
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                dropdownId.InnerText = (string)Session["usuario"] + " " + (string)Session["apellido"];
+            }
         }
     }
 }
