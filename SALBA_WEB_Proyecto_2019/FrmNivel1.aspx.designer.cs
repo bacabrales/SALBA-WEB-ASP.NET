@@ -31,6 +31,15 @@ namespace SALBA_WEB_Proyecto_2019 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaUno;
         
         /// <summary>
+        /// Control dpListadoUno.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dpListadoUno;
+        
+        /// <summary>
         /// Control btnRegresarPreguntaUno.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace SALBA_WEB_Proyecto_2019 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaDos;
+        
+        /// <summary>
+        /// Control dpListadoDos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dpListadoDos;
         
         /// <summary>
         /// Control btnRegresarPreguntaDos.
@@ -85,6 +103,15 @@ namespace SALBA_WEB_Proyecto_2019 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaTres;
         
         /// <summary>
+        /// Control DropDownList2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        
+        /// <summary>
         /// Control btnRegresarPreguntaTres.
         /// </summary>
         /// <remarks>
@@ -110,6 +137,15 @@ namespace SALBA_WEB_Proyecto_2019 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaCuatro;
+        
+        /// <summary>
+        /// Control DropDownList3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
         
         /// <summary>
         /// Control btnRegresarPreguntaCuatro.

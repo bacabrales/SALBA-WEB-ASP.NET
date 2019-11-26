@@ -1,17 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrmNivel3.aspx.cs" Inherits="SALBA_WEB_Proyecto_2019.FrmNivel3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrmNivel6.aspx.cs" Inherits="SALBA_WEB_Proyecto_2019.FrmNivel6" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>SALBA - Nivel 3</title>
+    <title>SALBA - Nivel 6</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/estilosPropios.css"/>
 </head>
 <body>
     
-        <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
+    <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
         <a href="#" class="navbar-brand text-sena"><strong>SALBA</strong></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
 			<span class="navbar-toggler-icon"></span>
@@ -33,45 +33,27 @@
 	</nav>
 
 
-    <form id="frmPreguntaNivel3" runat="server">
+    <form id="frmPreguntaNivel6" runat="server">
         <div id="preguntaUno" runat="server" visible="true">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4 p-0 border">
                         <h1 class="color-verde-claro p-2">
-                            <img class="mb-2" src="img/book.svg" width="30"/>Pregunta Uno</h1>
+                            <img class="mb-2" src="img/book.svg" width="30"/>Nivel Uno</h1>
                         <div class="text-dark text-justify overflow-auto ancho">
-                            <p class="p-4">Introducción</p>
-                            <p class="p-4">
-                                Este nivel especifica el concepto de ciclos y los 
-                                diferentes tipos. Al tener la claridad de los temas, 
-                                se efectúa prácticas didácticas con cada uno
-                                de los conceptos aprendidos y se realizará un
-                                test evaluativo como una actividad de aprehensión 
-                                de los puntos tratados.
-
-                                Se aprueba con el 80% de respuestas correctas, 
-                                de lo contrario, el nivel debe ser repetido. 
+                            <p class="pl-2">Introducción</p>
+                            <p class="pl-2 pr-2 ">
+                                Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
+                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
+                            </p>
+                            <p class="pl-2 pr-2 ">
+                                Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
+                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-8 p-0 text-center">
-                        <div class="text-justify">
-                            <p>1. Analice el pseudocódigo y determine la posible salida en pantalla. 
-                                Seleccione la respuesta que considere correcta:
-                            </p>
-                            <div class="d-block text-center">
-                                <img class="m-auto" src="img/Nivel3-pruebaUno.PNG" alt="Alternate Text" />
-                            </div>
-                            <div class="form-group">
-                                <asp:DropDownList CssClass="form-control m-auto w-50" ID="dpListadoUno" runat="server">
-                                    <asp:ListItem>11111 22222 33333 44444 55555</asp:ListItem>
-                                    <asp:ListItem>55555 44444 33333 22222 11111</asp:ListItem>
-                                    <asp:ListItem>11111 22222 33333 44444</asp:ListItem>
-                                    <asp:ListItem>44444 33333 22222 1111111111 22222 33333 44444 55555</asp:ListItem>
-                                </asp:DropDownList>
-                            </div>
-                        </div>
+                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
                     </div>
                 </div>
                 <div class="row">
@@ -94,22 +76,12 @@
                     <div class="col-md-4 p-0 border  overflow-auto ancho-prueba">
                         <h1 class="color-verde-claro p-2">
                             <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Pregunta Dos</h1>
+                            Nivel Dos</h1>
                         <p class="pl-2">Introdiccion</p>
-                        <div class="text-dark text-justify overflow-auto ancho">
-                            <p class="p-4">Introducción</p>
-                            <p class="p-4">
-                                Este nivel especifica el concepto de ciclos y los 
-                                diferentes tipos. Al tener la claridad de los temas, 
-                                se efectúa prácticas didácticas con cada uno
-                                de los conceptos aprendidos y se realizará un
-                                test evaluativo como una actividad de aprehensión 
-                                de los puntos tratados.
-
-                                Se aprueba con el 80% de respuestas correctas, 
-                                de lo contrario, el nivel debe ser repetido. 
-                            </p>
-                        </div>
+                        <p class="pl-2 pr-2 text-justify ancho">
+                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
+                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
+                        </p>
                     </div>
                     <div class="col-md-8 p-0 text-center">
                         <img src="img/Nivel3.jpg" alt="Alternate Text" />
@@ -134,22 +106,12 @@
                     <div class="col-md-4 p-0 border  overflow-auto ancho-prueba">
                         <h1 class="color-verde-claro p-2">
                             <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Pregunta Tres</h1>
+                            Nivel Tres</h1>
                         <p class="pl-2">Introdiccion</p>
-                        <div class="text-dark text-justify overflow-auto ancho">
-                            <p class="p-4">Introducción</p>
-                            <p class="p-4">
-                                Este nivel especifica el concepto de ciclos y los 
-                                diferentes tipos. Al tener la claridad de los temas, 
-                                se efectúa prácticas didácticas con cada uno
-                                de los conceptos aprendidos y se realizará un
-                                test evaluativo como una actividad de aprehensión 
-                                de los puntos tratados.
-
-                                Se aprueba con el 80% de respuestas correctas, 
-                                de lo contrario, el nivel debe ser repetido. 
-                            </p>
-                        </div>
+                        <p class="pl-2 pr-2 text-justify ancho">
+                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
+                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
+                        </p>
                     </div>
                     <div class="col-md-8 p-0 text-center">
                         <img src="img/Nivel3.jpg" alt="Alternate Text" />
@@ -174,22 +136,12 @@
                     <div class="col-md-4 p-0 border overflow-auto ancho-prueba">
                         <h1 class="color-verde-claro p-2">
                             <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Pregunta Cuatro</h1>
+                            Nivel Cuatro</h1>
                         <p class="pl-2">Introdiccion</p>
-                        <div class="text-dark text-justify overflow-auto ancho">
-                            <p class="p-4">Introducción</p>
-                            <p class="p-4">
-                                Este nivel especifica el concepto de ciclos y los 
-                                diferentes tipos. Al tener la claridad de los temas, 
-                                se efectúa prácticas didácticas con cada uno
-                                de los conceptos aprendidos y se realizará un
-                                test evaluativo como una actividad de aprehensión 
-                                de los puntos tratados.
-
-                                Se aprueba con el 80% de respuestas correctas, 
-                                de lo contrario, el nivel debe ser repetido. 
-                            </p>
-                        </div>
+                        <p class="pl-2 pr-2 text-justify ancho">
+                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
+                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
+                        </p>
                     </div>
                     <div class="col-md-8 p-0 text-center">
                         <img src="img/Nivel3.jpg" alt="Alternate Text" />
@@ -214,22 +166,12 @@
                     <div class="col-md-4 p-0 border overflow-auto ancho-prueba">
                         <h1 class="color-verde-claro p-2">
                             <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Pregunta Cinco</h1>
+                            Nivel Cinco</h1>
                         <p class="pl-2">Introdiccion</p>
-                        <div class="text-dark text-justify overflow-auto ancho">
-                            <p class="p-4">Introducción</p>
-                            <p class="p-4">
-                                Este nivel especifica el concepto de ciclos y los 
-                                diferentes tipos. Al tener la claridad de los temas, 
-                                se efectúa prácticas didácticas con cada uno
-                                de los conceptos aprendidos y se realizará un
-                                test evaluativo como una actividad de aprehensión 
-                                de los puntos tratados.
-
-                                Se aprueba con el 80% de respuestas correctas, 
-                                de lo contrario, el nivel debe ser repetido. 
-                            </p>
-                        </div>
+                        <p class="pl-2 pr-2 text-justify ancho">
+                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
+                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
+                        </p>
                     </div>
                     <div class="col-md-8 p-0 text-center">
                         <img src="img/Nivel3.jpg" alt="Alternate Text" />
@@ -256,4 +198,3 @@
     <script src="js/popper.min.js"></script>
 </body>
 </html>
-

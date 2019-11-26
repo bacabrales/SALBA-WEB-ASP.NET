@@ -18,22 +18,22 @@
 		<div class="collapse navbar-collapse" id="menu">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a href="#" class="nav-link">Nivel 1</a>
+					<a href="FrmNivel1.aspx" class="nav-link">Nivel 1</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Nivel 2</a>
+					<a href="FrmNivel2.aspx" class="nav-link">Nivel 2</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Nivel 3</a>
+					<a href="FrmNivel3.aspx" class="nav-link">Nivel 3</a>
 				</li>
                 <li class="nav-item">
-					<a href="#" class="nav-link">Nivel 4</a>
+					<a href="FrmNivel4.aspx" class="nav-link">Nivel 4</a>
 				</li>
                 <li class="nav-item">
-					<a href="#" class="nav-link">Nivel 5</a>
+					<a href="FrmNivel5.aspx" class="nav-link">Nivel 5</a>
 				</li>
                 <li class="nav-item">
-					<a href="#" class="nav-link">Nivel 6</a>
+					<a href="FrmNivel6.aspx" class="nav-link">Nivel 6</a>
 				</li>
                 </ul>
             <ul class="navbar-nav ml-auto">

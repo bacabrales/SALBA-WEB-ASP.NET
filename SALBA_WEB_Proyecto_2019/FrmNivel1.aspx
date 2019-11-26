@@ -20,7 +20,7 @@
 			
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="btn btn-outline-success">Inicio</a>
+                    <a href="FrmPrincipal.aspx" class="btn btn-outline-success">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle justify-content-end text-sena" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noé Villegas</a>
@@ -39,21 +39,37 @@
                 <div class="row">
                     <div class="col-lg-4 p-0 border">
                         <h1 class="color-verde-claro p-2">
-                            <img class="mb-2" src="img/book.svg" width="30"/>Nivel Uno</h1>
+                            <img class="mb-2" src="img/book.svg" width="30"/>Pregunta Uno</h1>
                         <div class="text-dark text-justify overflow-auto ancho">
-                            <p class="pl-2">Introducción</p>
-                            <p class="pl-2 pr-2 ">
-                                Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                            </p>
-                            <p class="pl-2 pr-2 ">
-                                Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
+                            <p class="p-3">Introducción</p>
+                            <p class="p-3 ">
+                                Este nivel especifica el concepto de variables 
+                                y sus diferentes tipos. Al tener la claridad del tema, 
+                                se realiza un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados. 
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-8 p-0 text-center">
-                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <div class="form-group">
+                                        <p>1) ¿Qué variable utilizamos para identificar cuando una condición es verdadera o falsa?</p>
+                                        <asp:DropDownList CssClass="form-control w-50 m-auto text-center" ID="dpListadoUno" runat="server">
+                                            <asp:ListItem>Tipo de dato booleano</asp:ListItem>
+                                            <asp:ListItem>Tipo de dato cadena</asp:ListItem>
+                                            <asp:ListItem>Tipo de dato entero</asp:ListItem>
+                                            <asp:ListItem>Tipo de dato real</asp:ListItem>
+                                        </asp:DropDownList>
+                                        <hr class="w-75 text-center" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -76,19 +92,35 @@
                     <div class="col-md-4 p-0 border  overflow-auto ancho-prueba">
                         <h1 class="color-verde-claro p-2">
                             <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Dos</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            Pregunta Dos</h1>
+                        <p class="p-3">Introducción</p>
+                            <p class="p-3 ">
+                                Este nivel especifica el concepto de variables 
+                                y sus diferentes tipos. Al tener la claridad del tema, 
+                                se realiza un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados. 
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
                     </div>
                     <div class="col-md-8 p-0 text-center">
-                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
+                        <div class="text-center">
+                            <div class="form-group">
+                                <p>2) ¿Qué tipo de dato se utiliza para almacenar los siguientes valores? “1, 2, 3, 4, 5, 6”</p>
+                                <asp:DropDownList CssClass="form-control w-50 m-auto text-center" ID="dpListadoDos" runat="server">
+                                    <asp:ListItem>Tipo de dato booleano</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato cadena</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato entero</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato real</asp:ListItem>
+                                </asp:DropDownList>
+                                <hr class="w-75 text-center" />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row fixed-bottom">
+                <div class="row fixed-bottom d-flex">
                     <div class="col-md-4  bg-dark">
                     </div>
                     <div class="col-md-8 p-3 d-flex bg-dark">
@@ -106,20 +138,36 @@
                     <div class="col-md-4 p-0 border  overflow-auto ancho-prueba">
                         <h1 class="color-verde-claro p-2">
                             <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Tres</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            Pregunta Tres</h1>
+                        <p class="p-3">Introducción</p>
+                            <p class="p-3 ">
+                                Este nivel especifica el concepto de variables 
+                                y sus diferentes tipos. Al tener la claridad del tema, 
+                                se realiza un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados. 
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
                     </div>
                     <div class="col-md-8 p-0 text-center">
-                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
+                        <div class="text-center">
+                            <div class="form-group">
+                                <p>3) ¿Qué tipo de variable se utiliza para almacenar texto?</p>
+                                <asp:DropDownList CssClass="form-control w-50 m-auto text-center" ID="DropDownList2" runat="server">
+                                    <asp:ListItem>Tipo de dato booleano</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato cadena</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato entero</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato real</asp:ListItem>
+                                </asp:DropDownList>
+                                <hr class="w-75 text-center" />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row fixed-bottom">
-                    <div class="col-md-4  bg-dark">
+                <div class="row fixed-bottom d-flex">
+                    <div class="col-md-4 bg-dark">
                     </div>
                     <div class="col-md-8 p-3 d-flex bg-dark">
                         <asp:Button CssClass="btn btn-outline-light" ID="btnRegresarPreguntaTres" runat="server" Text="Atrás" OnClick="btnRegresarPreguntaTres_Click" />
@@ -136,25 +184,41 @@
                     <div class="col-md-4 p-0 border overflow-auto ancho-prueba">
                         <h1 class="color-verde-claro p-2">
                             <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Cuatro</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            Pregunta Cuatro</h1>
+                        <p class="p-3">Introducción</p>
+                            <p class="p-3 ">
+                                Este nivel especifica el concepto de variables 
+                                y sus diferentes tipos. Al tener la claridad del tema, 
+                                se realiza un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados. 
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
                     </div>
                     <div class="col-md-8 p-0 text-center">
-                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
+                        <div class="text-center">
+                            <div class="form-group">
+                                <p> 4) Es un tipo de dato en programas informáticos que representa números decimal.</p>
+                                <asp:DropDownList CssClass="form-control w-50 m-auto text-center" ID="DropDownList3" runat="server">
+                                    <asp:ListItem>Tipo de dato booleano</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato cadena</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato entero</asp:ListItem>
+                                    <asp:ListItem>Tipo de dato real</asp:ListItem>
+                                </asp:DropDownList>
+                                <hr class="w-75 text-center" />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row fixed-bottom">
+                <div class="row fixed-bottom d-flex">
                     <div class="col-md-4  bg-dark">
                     </div>
                     <div class="col-md-8 p-3 d-flex bg-dark">
-                        <asp:Button CssClass="btn btn-outline-light" ID="btnRegresarPreguntaCuatro" runat="server" Text="Atrás" OnClick="btnRegresarPreguntaCuatro_Click"/>
+                        <asp:Button CssClass="btn btn-outline-light" ID="btnRegresarPreguntaCuatro" runat="server" Text="Atrás" OnClick="btnRegresarPreguntaCuatro_Click" />
                         <h4 class="text-white ml-auto pt-1">4/5</h4>
-                        <asp:Button CssClass="btn btn-outline-sena ml-auto mr-3" ID="btnEnviarPreguntaCuatro" runat="server" Text="Siguiente" OnClick="btnEnviarPreguntaCuatro_Click"/>
+                        <asp:Button CssClass="btn btn-outline-sena ml-auto mr-3" ID="btnEnviarPreguntaCuatro" runat="server" Text="Siguiente" OnClick="btnEnviarPreguntaCuatro_Click" />
                     </div>
                 </div>
             </div>
@@ -166,20 +230,25 @@
                     <div class="col-md-4 p-0 border overflow-auto ancho-prueba">
                         <h1 class="color-verde-claro p-2">
                             <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Cinco</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            Pregunta Cinco</h1>
+                        <p class="p-3">Introducción</p>
+                            <p class="p-3 ">
+                                Este nivel especifica el concepto de variables 
+                                y sus diferentes tipos. Al tener la claridad del tema, 
+                                se realiza un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados. 
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
                     </div>
                     <div class="col-md-8 p-0 text-center">
                         <img src="img/Nivel3.jpg" alt="Alternate Text" />
                     </div>
                 </div>
 
-                <div class="row fixed-bottom">
-                    <div class="col-md-4  bg-dark">
+                <div class="row fixed-bottom d-flex">
+                    <div class="col-md-4 bg-dark">
                     </div>
                     <div class="col-md-8 p-3 d-flex bg-dark">
                         <asp:Button CssClass="btn btn-outline-light" ID="btnRegresarPreguntaCinco" runat="server" Text="Atrás" OnClick="btnRegresarPreguntaCinco_Click"/>

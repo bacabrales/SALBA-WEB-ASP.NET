@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
+        <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
         <a href="#" class="navbar-brand text-sena"><strong>SALBA</strong></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
 			<span class="navbar-toggler-icon"></span>
@@ -20,44 +20,70 @@
 			
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-					<a href="#" class="btn btn-outline-success">Inicio</a>
-				</li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle justify-content-end text-sena" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noé Villegas</a>
-                        <div class="dropdown-menu " aria-labelledby="dropdownId">
-                            <a class="dropdown-item text-sena" href="#">Cerrar Sesión</a>
-                        </div>
-                    </li>
-			</ul>
+                    <a href="FrmPrincipal.aspx" class="btn btn-outline-success">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle justify-content-end text-sena" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noé Villegas</a>
+                    <div class="dropdown-menu " aria-labelledby="dropdownId">
+                        <a class="dropdown-item text-sena" href="#">Cerrar Sesión</a>
+                    </div>
+                </li>
+            </ul>
 		</div>
 	</nav>
+
+
     <form id="frmPreguntaNivel2" runat="server">
         <div id="preguntaUno" runat="server" visible="true">
-            <div class="container-fluid">
+            <div class="container-fluid mb-5">
                 <div class="row">
-                    <div class="col-md-4 p-0 border">
+                    <div class="col-lg-4 p-0 border">
                         <h1 class="color-verde-claro p-2">
-                            <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Uno</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            <img class="mb-2" src="img/book.svg" width="30"/>Pregunta Uno</h1>
+                        <div class="text-dark text-justify overflow-auto ancho">
+                            <p class="p-4">Introducción</p>
+                            <p class="p-4">
+                                Este nivel especifica los conceptos de condiciones
+                                simples, anidadas y estructura de caso. Al tener la 
+                                claridad de los temas, se efectúa prácticas didácticas 
+                                con cada uno de los conceptos aprendidos y se 
+                                realizará un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados.
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-md-8 p-0 text-center">
-                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
+                    <div class="col-lg-8 p-0 text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <h2>Seleccione la respuesta correcta:</h2>
+                                    <div class="form-group">
+                                        <h4>1. ¿Un condicional puede?</h4>
+                                        <asp:RadioButtonList CssClass="text-left w-50 m-auto" ID="rbListadoUno" runat="server">
+                                            <asp:ListItem>Tomar una decisión</asp:ListItem>
+                                            <asp:ListItem>Elegir un método</asp:ListItem>
+                                            <asp:ListItem>Confirmar una validación</asp:ListItem>
+                                            <asp:ListItem>Corresponder a un método</asp:ListItem>
+                                        </asp:RadioButtonList>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row footer-propio">
-                    <div class="col-md-4  bg-dark">
-                    </div>
-                    <div class="col-md-8 p-3 d-flex bg-dark">
-                        <asp:Button CssClass="btn btn-outline-light" ID="btnRegresarPreguntaUno" runat="server" Text="Atrás" OnClick="btnRegresarPreguntaUno_Click" />
-                        <h4 class="text-white ml-auto pt-1">1/5</h4>
-                        <asp:Button CssClass="btn btn-outline-sena ml-auto mr-3" ID="btnEnviar" runat="server" Text="Siguiente" OnClick="btnEnviar_Click" />
-                    </div>
+                <div class="row">
+                    <footer class="fixed-bottom bg-dark d-flex">
+                        <div class="col-lg-4 mr-auto">
+                        </div>
+                        <div class="col-lg-8 p-2 d-flex">
+                            <asp:Button CssClass="btn btn-outline-light " ID="btnRegresarPreguntaUno" runat="server" Text="Atrás" OnClick="btnRegresarPreguntaUno_Click" />
+                            <h4 class="text-white ml-auto pt-1">1/5</h4>
+                            <asp:Button CssClass="btn btn-outline-sena ml-auto mr-3" ID="btnEnviar" runat="server" Text="Siguiente" OnClick="btnEnviar_Click" />
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -65,22 +91,46 @@
         <div id="preguntaDos" runat="server" visible="false">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4 p-0 border">
+                    <div class="col-lg-4 p-0 border">
                         <h1 class="color-verde-claro p-2">
-                            <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Dos</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            <img class="mb-2" src="img/book.svg" width="30"/>Pregunta dos</h1>
+                        <div class="text-dark text-justify overflow-auto ancho">
+                            <p class="p-4">Introducción</p>
+                            <p class="p-4">
+                                Este nivel especifica los conceptos de condiciones
+                                simples, anidadas y estructura de caso. Al tener la 
+                                claridad de los temas, se efectúa prácticas didácticas 
+                                con cada uno de los conceptos aprendidos y se 
+                                realizará un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados.
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-md-8 p-0 text-center">
-                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
+                    <div class="col-lg-8 p-0 text-center">
+                        
+                        <div class="row">
+                            <div class="col-md-12 d-block">
+                                <div class="text-center">
+                                    <h2>Seleccione la respuesta correcta:</h2>
+                                    <div class="form-group">
+                                        <h4>2. ¿Qué es una condición simple?</h4>
+                                        <asp:RadioButtonList CssClass="text-left w-50 m-auto" ID="RadioButtonList5" runat="server">
+                                            <asp:ListItem>Cuando se realiza una acción</asp:ListItem>
+                                            <asp:ListItem>Tiene un solo caso</asp:ListItem>
+                                            <asp:ListItem>Cuando hay una condición dentro de otra condición</asp:ListItem>
+                                            <asp:ListItem>Solo un método</asp:ListItem>
+                                        </asp:RadioButtonList>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row footer-propio">
+                <div class="row fixed-bottom d-flex">
                     <div class="col-md-4  bg-dark">
                     </div>
                     <div class="col-md-8 p-3 d-flex bg-dark">
@@ -95,23 +145,47 @@
         <div id="preguntaTres" runat="server" visible="false">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4 p-0 border">
+                    <div class="col-lg-4 p-0 border">
                         <h1 class="color-verde-claro p-2">
-                            <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Tres</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            <img class="mb-2" src="img/book.svg" width="30"/>Pregunta tres</h1>
+                        <div class="text-dark text-justify overflow-auto ancho">
+                            <p class="p-4">Introducción</p>
+                            <p class="p-4">
+                                Este nivel especifica los conceptos de condiciones
+                                simples, anidadas y estructura de caso. Al tener la 
+                                claridad de los temas, se efectúa prácticas didácticas 
+                                con cada uno de los conceptos aprendidos y se 
+                                realizará un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados.
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-md-8 p-0 text-center">
-                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
+                    <div class="col-lg-8 p-0 text-center">
+                       
+                        <div class="row">
+                            <div class="col-md-12 d-block">
+                                <div class="text-center">
+                                    <h2>Seleccione la respuesta correcta:</h2>
+                                    <div class="form-group">
+                                        <h4>3. ¿Qué es una condición compuesta?</h4>
+                                        <asp:RadioButtonList CssClass="text-left w-50 m-auto" ID="RadioButtonList7" runat="server">
+                                            <asp:ListItem>Múltiples formas</asp:ListItem>
+                                            <asp:ListItem>Toma de una decisión</asp:ListItem>
+                                            <asp:ListItem>Cuando hay una condición dentro de otra condición</asp:ListItem>
+                                            <asp:ListItem>Condición que retorna un valor</asp:ListItem>
+                                        </asp:RadioButtonList>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row footer-propio">
-                    <div class="col-md-4  bg-dark">
+                <div class="row fixed-bottom d-flex">
+                    <div class="col-md-4 bg-dark">
                     </div>
                     <div class="col-md-8 p-3 d-flex bg-dark">
                         <asp:Button CssClass="btn btn-outline-light" ID="btnRegresarPreguntaTres" runat="server" Text="Atrás" OnClick="btnRegresarPreguntaTres_Click" />
@@ -125,22 +199,48 @@
         <div id="preguntaCuatro" runat="server" visible="false">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4 p-0 border">
+                    <div class="col-lg-4 p-0 border">
                         <h1 class="color-verde-claro p-2">
-                            <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Cuatro</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            <img class="mb-2" src="img/book.svg" width="30"/>Pregunta cuatro</h1>
+                        <div class="text-dark text-justify overflow-auto ancho">
+                            <p class="p-4">Introducción</p>
+                            <p class="p-4">
+                                Este nivel especifica los conceptos de condiciones
+                                simples, anidadas y estructura de caso. Al tener la 
+                                claridad de los temas, se efectúa prácticas didácticas 
+                                con cada uno de los conceptos aprendidos y se 
+                                realizará un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados.
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-md-8 p-0 text-center">
-                        <img src="img/Nivel3.jpg" alt="Alternate Text" />
+                    <div class="col-lg-8 p-0 text-center">
+                        
+                        <div class="row">
+                            <div class="col-md-12 d-block">
+                                <div class="text-center">
+                                    <h2>Seleccione la respuesta correcta:</h2>
+                                    <div class="form-group">
+                                        <h4>4. ¿Qué es una estructura de caso?</h4>
+                                        <asp:RadioButtonList CssClass="text-left w-50 m-auto" ID="RadioButtonList9" runat="server">
+                                            <asp:ListItem>Toma de decisiones</asp:ListItem>
+                                            <asp:ListItem>Evalúa múltiples condiciones</asp:ListItem>
+                                            <asp:ListItem>Variable anidada</asp:ListItem>
+                                            <asp:ListItem>Cuando hay una condición dentro de otra condición</asp:ListItem>
+                                        </asp:RadioButtonList>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
-                <div class="row footer-propio">
+                <div class="row fixed-bottom d-flex">
                     <div class="col-md-4  bg-dark">
                     </div>
                     <div class="col-md-8 p-3 d-flex bg-dark">
@@ -155,23 +255,31 @@
         <div id="preguntaCinco" runat="server" visible="false">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4 p-0 border">
+                    <div class="col-lg-4 p-0 border">
                         <h1 class="color-verde-claro p-2">
-                            <img class="mb-2" src="img/book.svg" width="30" alt="Alternate Text" />
-                            Nivel Cinco</h1>
-                        <p class="pl-2">Introdiccion</p>
-                        <p class="pl-2 pr-2 text-justify">
-                            Se entiende por texto una composición ordenada de signos inscritos en un sistema de escritura, cuya lectura permite recobrar un sentido específico referido por el emisor. La palabra texto proviene del latín textus, que significa “tejido” o “entrelazado”, de modo que en el origen mismo de la idea del texto se encuentra su capacidad para contener ideas en un hilo o una secuencia de caracteres.
-                   De modo que un texto viene a ser una cantidad de enunciados hilados entre sí y ordenados en base a un argumento (explicativo, narrativo, descriptivo, etc.), empleando para ello un sistema concreto de signos, que llamaremos lenguaje, y dentro de dicho sistema un código concreto que llamaremos lengua.
-                        </p>
+                            <img class="mb-2" src="img/book.svg" width="30"/>Pregunta Cinco</h1>
+                        <div class="text-dark text-justify overflow-auto ancho">
+                            <p class="p-4">Introducción</p>
+                            <p class="p-4">
+                                Este nivel especifica los conceptos de condiciones
+                                simples, anidadas y estructura de caso. Al tener la 
+                                claridad de los temas, se efectúa prácticas didácticas 
+                                con cada uno de los conceptos aprendidos y se 
+                                realizará un test evaluativo como una actividad de 
+                                aprehensión de los puntos tratados.
+
+                                Se aprueba con el 80% de respuestas correctas, 
+                                de lo contrario, el nivel debe ser repetido. 
+                            </p>
+                        </div>
                     </div>
                     <div class="col-md-8 p-0 text-center">
                         <img src="img/Nivel3.jpg" alt="Alternate Text" />
                     </div>
                 </div>
 
-                <div class="row footer-propio">
-                    <div class="col-md-4  bg-dark">
+                <div class="row fixed-bottom d-flex">
+                    <div class="col-md-4 bg-dark">
                     </div>
                     <div class="col-md-8 p-3 d-flex bg-dark">
                         <asp:Button CssClass="btn btn-outline-light" ID="btnRegresarPreguntaCinco" runat="server" Text="Atrás" OnClick="btnRegresarPreguntaCinco_Click"/>
