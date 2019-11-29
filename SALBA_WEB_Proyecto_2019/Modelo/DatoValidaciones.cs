@@ -13,6 +13,8 @@ namespace SALBA_WEB_Proyecto_2019.Modelo
 
         public static string usuario;
         public static string apellido;
+        public static string loginCorreo;
+        public static string loginPassword;
         public int Create(dato aprendiz)
         {
             SqlConnection conex = Singleton.obtenerConexion();
@@ -41,6 +43,9 @@ namespace SALBA_WEB_Proyecto_2019.Modelo
                 dato = 1;
                 usuario = read["nomUser"].ToString();
                 apellido = read["apelUser"].ToString();
+
+                loginCorreo = read["correUser"].ToString();
+                loginPassword = read["contraUser"].ToString();
             }
             return dato;
         }

@@ -22,6 +22,24 @@ namespace SALBA_WEB_Proyecto_2019 {
         protected global::System.Web.UI.HtmlControls.HtmlForm frmPreguntaNivel2;
         
         /// <summary>
+        /// Control nombreUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nombreUsuario;
+        
+        /// <summary>
+        /// Control btnCerrarSesion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCerrarSesion;
+        
+        /// <summary>
         /// Control preguntaUno.
         /// </summary>
         /// <remarks>
@@ -29,33 +47,6 @@ namespace SALBA_WEB_Proyecto_2019 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaUno;
-        
-        /// <summary>
-        /// Control rbListadoUno.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbListadoUno;
-        
-        /// <summary>
-        /// Control btnRegresarPreguntaUno.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegresarPreguntaUno;
-        
-        /// <summary>
-        /// Control btnEnviar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviar;
         
         /// <summary>
         /// Control preguntaDos.
@@ -67,33 +58,6 @@ namespace SALBA_WEB_Proyecto_2019 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaDos;
         
         /// <summary>
-        /// Control RadioButtonList5.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList5;
-        
-        /// <summary>
-        /// Control btnRegresarPreguntaDos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegresarPreguntaDos;
-        
-        /// <summary>
-        /// Control btnEnviarPregunta2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviarPregunta2;
-        
-        /// <summary>
         /// Control preguntaTres.
         /// </summary>
         /// <remarks>
@@ -101,33 +65,6 @@ namespace SALBA_WEB_Proyecto_2019 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaTres;
-        
-        /// <summary>
-        /// Control RadioButtonList7.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList7;
-        
-        /// <summary>
-        /// Control btnRegresarPreguntaTres.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegresarPreguntaTres;
-        
-        /// <summary>
-        /// Control btnEnviarPreguntaTres.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviarPreguntaTres;
         
         /// <summary>
         /// Control preguntaCuatro.
@@ -139,33 +76,6 @@ namespace SALBA_WEB_Proyecto_2019 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaCuatro;
         
         /// <summary>
-        /// Control RadioButtonList9.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList9;
-        
-        /// <summary>
-        /// Control btnRegresarPreguntaCuatro.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegresarPreguntaCuatro;
-        
-        /// <summary>
-        /// Control btnEnviarPreguntaCuatro.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviarPreguntaCuatro;
-        
-        /// <summary>
         /// Control preguntaCinco.
         /// </summary>
         /// <remarks>
@@ -175,21 +85,39 @@ namespace SALBA_WEB_Proyecto_2019 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preguntaCinco;
         
         /// <summary>
-        /// Control btnRegresarPreguntaCinco.
+        /// Control footerPrincipal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegresarPreguntaCinco;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl footerPrincipal;
         
         /// <summary>
-        /// Control btnEnviarPreguntaCinco.
+        /// Control btnRegresar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviarPreguntaCinco;
+        protected global::System.Web.UI.WebControls.Button btnRegresar;
+        
+        /// <summary>
+        /// Control valor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl valor;
+        
+        /// <summary>
+        /// Control btnEnviar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEnviar;
     }
 }

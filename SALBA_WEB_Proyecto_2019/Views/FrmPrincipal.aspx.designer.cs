@@ -10,42 +10,33 @@
 namespace SALBA_WEB_Proyecto_2019 {
     
     
-    public partial class FrmHome {
+    public partial class FrmPrincipal {
         
         /// <summary>
-        /// Control frmSesion.
+        /// Control frmPrincipal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm frmSesion;
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmPrincipal;
         
         /// <summary>
-        /// Control txtEmailLogin.
+        /// Control nombreUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmailLogin;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nombreUsuario;
         
         /// <summary>
-        /// Control txtPasswordLogin.
+        /// Control btnCerrarSesion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPasswordLogin;
-        
-        /// <summary>
-        /// Control btnLogin.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.Button btnCerrarSesion;
     }
 }

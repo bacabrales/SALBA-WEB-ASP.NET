@@ -1,0 +1,173 @@
+/*
+
+btn-primary
+
+
+*/
+*{
+    font-family: 'Titillium Web', sans-serif ;
+}
+body{
+    overflow-x: hidden;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    }
+
+.contenedor-barra{
+
+    min-height: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    
+
+}
+
+
+.contenedor-barra1{
+    margin-top: 62px !important;
+    min-height: 100%;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+}
+h2{
+    font-weight: bold;
+}
+.bg-Blanco{
+    background-color: #ffffff !important;
+}
+.bg-oscuro{
+    background-color: #1d588842 !important;
+}
+.bordes {
+    border-bottom: solid 1 black;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    /*margin: auto;*/
+}
+.level{
+    color: 	rgb(255, 27, 27) !important;
+}
+.libro{
+    color: 	rgb(0, 204, 255) !important;
+}
+.cup{
+    color: 	#FFD700 !important;
+}
+.letra {
+    color: black;
+}
+.enlace{
+    font-weight: bold !important;
+    font-size: 18px;
+}
+.text-black{
+    color: rgb(27, 27, 27) !important;
+}
+.text-primary {
+    color: #FF7323 !important;
+}
+.text-secondary {
+    color: #59B548 !important;
+}
+.distancia{
+    margin-top: 20px !important;
+}
+.contenedor-form{
+    max-width: 500px !important;
+}
+
+footer {
+    background-color: #E9ECEF;
+}
+
+
+.form-control:focus{
+    border: 2px solid #747474;
+    outline:none !important;
+
+    box-shadow: none;
+
+}
+.columna-info{
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+.btn-success{
+    background-color: #59B548;
+    color: #ffff;
+}
+.btn-outline-success{
+    color: #59B548 !important;
+    border: 2px solid#59B548 !important;
+
+}
+.alert-success{
+    background-color: rgb(198, 226, 195);
+}
+.btn-secondary{
+    background-color: #238276;
+    color: #ffff !important;
+}
+.btn-outline-secondary{
+    color: #238276 !important;
+    border-color: #238276 !important;
+}
+.btn-outline-secondary:hover{
+    color: #ffff !important;
+    background-color: #238276!important;
+}
+.btn-outline-primary{
+    color: #FF7323 !important;
+    border-color: #FF7323 !important;
+}
+.btn-outline-primary:hover{
+    color: #ffff !important;
+    background-color: #FF7323!important;
+}
+.btn-outline-success:hover{
+    color: #ffff !important;
+    background-color: #59B548!important;
+}
+.card-sombra{
+    transition: all .2s ease-out !important;
+}
+.card-sombra:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.contenedor-principal{
+    background-color: rgb(240, 240, 240);
+}
+.border-success{
+    border-top: 4px solid #238276 !important;
+    border-bottom: 0 !important;
+}
+.border-primary{
+    border-top: 4px solid #FF7323 !important;
+    border-bottom: 0 !important;
+}
+.border-secondary{
+    border-top: 4px solid #59B548 !important;
+    border-bottom: 0 !important;
+}
+.border-second{
+    border-top: 4px solid rgb(136, 136, 136) !important;
+    border-bottom: 0 !important;
+    border-left:  0 !important;
+}
+.jumbo-bg{
+    background-image: url(../img/jumbo.png);
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
