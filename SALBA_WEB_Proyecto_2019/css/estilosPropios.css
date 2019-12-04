@@ -1,3 +1,30 @@
+#dropzone {
+    width: 100px;
+    height: 80px;
+}
+
+.border-modificar{
+    border-radius: 20px;
+}
+
+#winston {
+    width: 100px;
+    height: 60px;
+}
+
+.datos {
+    font-family: monospace !important;
+    /* font-size: 12px; */
+    line-height: 20px;
+    border: 1px solid #ccc; 
+    padding: 20px 30px;
+}
+
+
+b {
+    color: blue;
+}
+
 .btn-outline-sena {
     color: #fc7323;
     background-color: #343a40;

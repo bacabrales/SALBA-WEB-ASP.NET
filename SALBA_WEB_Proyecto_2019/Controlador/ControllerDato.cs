@@ -19,6 +19,7 @@ namespace SALBA_WEB_Proyecto_2019.Controlador
             aprendiz.Apellido = ((TextBox)vista.Page.Form.FindControl("txtApellido")).Text;
             aprendiz.Correo = ((TextBox)vista.Page.Form.FindControl("txtEmail")).Text;
             aprendiz.Password = ((TextBox)vista.Page.Form.FindControl("txtPassword")).Text;
+            aprendiz.Tipo = Convert.ToInt32(((DropDownList)vista.Page.Form.FindControl("cmbTipo")).SelectedValue);
             int create = listaAprendiz.Create(aprendiz);
             return create;
         }

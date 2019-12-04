@@ -67,7 +67,10 @@
                             <div class="row">
                                 <div class="col-12 input-group mb-3">
                                     <i class="fas fa-user  input-group-addon  mt-3"></i>
-
+                                    <asp:DropDownList ID="cmbTipo" runat="server" CssClass="form-control">
+                                        <asp:ListItem Value="1">Aprendiz</asp:ListItem>
+                                        <asp:ListItem Value="2">Instructor</asp:ListItem>
+                                    </asp:DropDownList>
                                     <%--<input class="form-control bordes" name="txtUsuario" id="txtUsuario" type="text" placeholder="Usuario" required>--%>
                                 </div>
                                 <div class="col-12 input-group mb-3">

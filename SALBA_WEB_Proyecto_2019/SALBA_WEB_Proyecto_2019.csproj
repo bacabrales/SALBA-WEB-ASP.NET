@@ -76,8 +76,11 @@
     <Content Include="css\estilos.css" />
     <Content Include="css\estilosPropios.css" />
     <Content Include="css\main.css" />
+    <Content Include="css\Style.css" />
     <Content Include="css\sweetalert2.min.css" />
     <Content Include="FrmHome.aspx" />
+    <Content Include="js\Dropzone.js" />
+    <Content Include="js\Script.js" />
     <Content Include="Views\FrmRegistro.aspx" />
     <Content Include="Views\FrmNivel1.aspx" />
     <Content Include="Views\FrmNivel2.aspx" />

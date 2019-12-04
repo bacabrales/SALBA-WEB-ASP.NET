@@ -71,8 +71,8 @@
                         <div class="">
                             <div class="">
                                 <!--Contenido del nivel informacion referente-->
-                                <p class="text-justify mt-3">Introduccion a los procedimientos</p>
-                                <h4><strong>¿Qué es un procedimiento?</strong></h4>
+                                <p class="text-justify mt-3">Introduccion a los tipos de variables</p>
+                                <h4><strong>¿Qué es un variable?</strong></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi autem rem unde fugiat dicta cumque, dolorum est quo dignissimos, repellendus expedita mollitia. Vitae vero voluptatibus quis consectetur dicta blanditiis quibusdam!</p>
                             </div>
                         </div>

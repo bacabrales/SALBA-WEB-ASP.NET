@@ -25,6 +25,12 @@ body, html{
 
 }
 
+.contenedor-barra-modificada {
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
 
 .contenedor-barra1{
     margin-top: 62px !important;

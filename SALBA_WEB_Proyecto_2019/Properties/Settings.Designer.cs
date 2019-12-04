@@ -32,5 +32,14 @@ namespace SALBA_WEB_Proyecto_2019.Properties {
                 return ((string)(this["cadena"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        public string Valor {
+            get {
+                return ((string)(this["Valor"]));
+            }
+        }
     }
 }

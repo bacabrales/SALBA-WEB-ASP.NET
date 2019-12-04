@@ -11,6 +11,7 @@ namespace SALBA_WEB_Proyecto_2019.Modelo
         private string apellido;
         private string correo;
         private string password;
+        private int tipo;
 
         //private string usuario;
         //private string passwordLogin;
@@ -19,6 +20,7 @@ namespace SALBA_WEB_Proyecto_2019.Modelo
         public string Apellido { get => apellido; set => apellido = value; }
         public string Correo { get => correo; set => correo = value; }
         public string Password { get => password; set => password = value; }
+        public int Tipo { get => tipo; set => tipo = value; }
 
 
         //public string Usuario { get => usuario; set => usuario = value; }

@@ -24,7 +24,14 @@ namespace SALBA_WEB_Proyecto_2019.Modelo
             cm.Parameters.AddWithValue("@apellido", aprendiz.Apellido);
             cm.Parameters.AddWithValue("@correo", aprendiz.Correo);
             cm.Parameters.AddWithValue("@password", aprendiz.Password);
-            int create = cm.ExecuteNonQuery();
+            cm.Parameters.AddWithValue("@tipo", aprendiz.Tipo);
+            int id = Convert.ToInt32(cm.ExecuteScalar());
+
+            SqlCommand cm1 = new SqlCommand("pa_tem", conex);
+            cm1.CommandType = CommandType.StoredProcedure;
+            cm1.Parameters.AddWithValue("@id",id);
+
+            int create = cm1.ExecuteNonQuery();
             return create;
         }
 

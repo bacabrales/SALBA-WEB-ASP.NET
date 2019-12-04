@@ -1,0 +1,32 @@
+/** {margin: 0; padding: 0;}
+body {padding: 30px;}*/
+
+.highlight {display: none;}
+
+/* Estilos para el contenedor. */
+.layer {
+	font-family: monospace !important;
+	/* font-size: 12px; */
+	line-height: 20px;
+	
+	border: 1px solid #ccc;
+	background-size: 20px 20px;
+	
+	padding: 20px 30px;
+	
+	white-space: pre-wrap; /*to wrap words*/
+	word-wrap: break-word; /*IE 5.5+*/
+	overflow: hidden;
+}
+
+/*colores*/
+.sc {color: brown;}
+.keyword {color: Blue; font-weight: bold;} /* Coloreado para las palabras recervadas. */
+.string {color: Red;} /* Coloreado para los string o los textos entre comillas. */
+.comment {color: green} /* Coloreado para los comentarios. */
+
+/* Eventos y palabras claves de love2d y lua. */
+.keywordLove2dEvents{color: Magenta;}
+.UsingcommentC{color: Magenta;}
+.customFunctions{color: Brown;}
+.numberColor{color: DarkGreen;}
